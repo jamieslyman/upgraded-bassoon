@@ -1,13 +1,17 @@
 from tg import expose, TGController, MinimalApplicationConfigurator
 from wsgiref.simple_server import make_server
 
+
 class RootController(TGController):
     @expose()
     def index(self):
         return 'Hello World!'
+
     @expose('hello.xhtml')
     def hello(self, person=None):
         return dict(person=person)
+
+
 config = MinimalApplicationConfigurator()
 config.update_blueprint({
     'root_controller': RootController(),
