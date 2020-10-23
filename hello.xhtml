@@ -1,0 +1,17 @@
+<html>
+    <style>
+        h1{
+            font-family:sans-serif
+        }
+        html{
+            background-color: #222222;
+            color: #eeeeee
+        }
+    </style>
+    <title>Hello!</title>
+    <py:if test="person">
+        <h1>Hello ${person}!</h1>
+    </py:if><py:else>
+        <h1>Hello World!</h1>
+    </py:else>
+</html>
