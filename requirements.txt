@@ -1,0 +1,2 @@
+tg.devtools ~= 2.4.3
+kajiki ~= 0.8.2
